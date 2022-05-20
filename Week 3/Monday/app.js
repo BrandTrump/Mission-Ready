@@ -185,3 +185,30 @@
 
 // const avg = sum / numbers.length;
 // console.log(avg);
+
+// const objectArray = [
+//   { fName: "Brandon", favColor: "Green" },
+//   { fName: "John", favColor: "Red" },
+// ];
+
+// console.log(objectArray);
+
+// const favRecipe = {
+//   title: "Pizza",
+//   servings: 2,
+//   ingredients: ["mozzarella", "basil", "tomato sauce", "evoo"],
+// };
+
+// console.log(favRecipe, favRecipe.ingredients.length);
+
+// favRecipe.ingredients.push("water");
+
+// console.log(favRecipe);
+
+// const favNums = [6, 23, 24];
+
+// const min = Math.min(...favNums);
+// const max = Math.max(...favNums);
+// const squareMin = Math.sqrt(min);
+
+// console.log(min, max, squareMin);
