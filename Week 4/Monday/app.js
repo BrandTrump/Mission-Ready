@@ -131,3 +131,48 @@
 // // a = previous value,  b = current value
 // const reducedValue = someArray.reduce((a, b) => a + b);
 // console.log(`reduced value = ${reducedValue}`);
+
+// const numArray = [5, 7, 2, 8, 6, 3, 9, 4, 1];
+
+// const descendNums = (array) => array.sort((a, b) => b - a);
+// const ascendNums = (array) => array.sort((a, b) => a - b);
+
+// console.log(descendNums(numArray));
+// console.log(ascendNums(numArray));
+
+// const characters = [
+//   {
+//     name: "Tom sawyer",
+//     birthDate: 1876,
+//     death: 1945,
+//   },
+//   {
+//     name: "Bart Simpson",
+//     birthDate: 1989,
+//     death: 2017,
+//   },
+//   {
+//     name: "Peter Griffin",
+//     birthDate: 1999,
+//     death: 2014,
+//   },
+// ];
+
+// const youngestCharacter = (array) =>
+//   array.sort((a, b) =>
+//     a.death - a.birthDate < b.death - b.birthDate ? -1 : 1
+//   );
+
+// console.log(youngestCharacter(characters));
+
+// const oldestCharacter = (array) =>
+//   array.sort((a, b) =>
+//     a.death - a.birthDate > b.death - b.birthDate ? -1 : 1
+//   );
+
+// console.log(oldestCharacter(characters));
+
+// const sortByName = (array) =>
+//   array.sort((a, b) => a.name.localeCompare(b.name));
+
+// console.log(sortByName(characters));
