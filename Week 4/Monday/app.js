@@ -176,3 +176,100 @@
 //   array.sort((a, b) => a.name.localeCompare(b.name));
 
 // console.log(sortByName(characters));
+
+// class Person {
+//     constructor(name) {
+//     this.name = name;
+//     }
+
+//     introduce() {
+//     console.log('Hello, my name is ' + this.name);
+//     }
+//   }
+
+//   const otto = new Person('Otto');
+//   otto.introduce();
+
+// class recipes {
+//   constructor(title, servings, ingredients) {
+//     this.title = title;
+//     this.servings = servings;
+//     this.ingredients = ingredients;
+//   }
+
+//   makeRecipes() {
+//     console.log("Your food is ready!");
+//   }
+//   showDetails() {
+//     console.log(`${this.title}, ${this.servings}, ${this.ingredients}`);
+//   }
+// }
+
+// const recipe1 = new recipes("pizza", 4, ["cheese", "tomato sauce", "basil"]);
+// const recipe2 = new recipes("pie", 1, ["steak", "cheese"]);
+
+// recipe1.makeRecipes();
+// recipe1.showDetails();
+// recipe2.makeRecipes();
+// recipe2.showDetails();
+
+// const student = {
+//   // data property
+//   firstName: "Monica",
+//   // accessor property(getter)
+//   get getName() {
+//     return this.firstName;
+//   },
+//   set setName(name) {
+//     return (this.firstName = name);
+//   },
+// };
+
+// // accessing data property
+// console.log(student.firstName); // Monica
+// // accessing getter methods
+// console.log(student.getName); // Monica
+// // trying to access as a method
+// //console.log(student.getName()); // error
+// student.setName = "James";
+// console.log(student.firstName);
+
+// const bankAccount = {
+//   bank: 12,
+//   branch: 1234,
+//   account: 1234567,
+//   suffix: 12,
+
+//   set setSuffix(suffixNum) {
+//     return (this.suffix = suffixNum);
+//   },
+// };
+
+// class CarSales {
+//   carList = [];
+
+//   set setCarList(carName) {
+//     this.carList.push(carName);
+//   }
+
+//   get getCarList() {
+//     this.carList.length === 0
+//       ? console.log("Sorry! We don’t have any cars yet")
+//       : console.log(this.carList);
+//   }
+
+//   rentCar() {
+//     this.carList.pop();
+//   }
+//   returnCar(carName) {
+//     this.carList.push(carName);
+//   }
+// }
+
+// const carList1 = new CarSales();
+// carList1.setCarList = "Alfa Romeo";
+// console.log(carList1.carList);
+// carList1.setCarList = "Ferrari";
+// console.log(carList1.carList);
+// carList1.rentCar();
+// console.log(carList1.carList);
