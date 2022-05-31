@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/prancing-horse.png"
+        alt="Ferrari-logo"
+        id="prancing-horse-nav"
+      />
+      <nav>
+        <svg
+          class="close"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 36 36"
+        >
+          <path
+            fill="currentColor"
+            d="m19.41 18l8.29-8.29a1 1 0 0 0-1.41-1.41L18 16.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29l-8.3 8.29A1 1 0 1 0 9.7 27.7l8.3-8.29l8.29 8.29a1 1 0 0 0 1.41-1.41Z"
+            class="clr-i-outline clr-i-outline-path-1"
+          />
+          <path fill="none" d="M0 0h36v36H0z" />
+        </svg>
+
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <svg
+        class="menu"
+        viewBox="0 0 48 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+          fill="white"
+        />
+      </svg>
+    </header>
+
+    <section class="feature-comparison">
+      <img src="/f40.jpg" alt="Ferrari-F40" id="make-left" />
+      <img src="/f50.jpg" alt="Ferrari-F50" id="make-right" />
+    </section>
+
+    <section class="compasrison">
+      <div class="columns">
+        <div class="left">
+          <h1>Ferrari F40</h1>
+          <h3>Top Speed: <span>324</span></h3>
+          <h3>Acceleration: <span>4.1 Seconds</span></h3>
+          <h3>Quarter Mile: <span>11.9 Seconds</span></h3>
+          <h3>Mile: <span>20.9 Seconds</span></h3>
+        </div>
+        <div id="left-comparison"><h3></h3></div>
+        <div class="compare">
+          <button id="compareButton" onclick="compareCars(infoF40, infoF50)">
+            Compare
+          </button>
+        </div>
+        <div id="right-comparison"><h3></h3></div>
+        <div class="right">
+          <h1>Ferrari F50</h1>
+          <h3>Top Speed: <span>325</span></h3>
+          <h3>Acceleration: <span>3.87 Seconds</span></h3>
+          <h3>Quarter Mile: <span>11.5 Seconds</span></h3>
+          <h3>Mile: <span>21.7 Seconds</span></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-content">
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          hic similique ullam, facilis ipsam mollitia nihil error officiis
+          magni, magnam eaque fugiat natus consequatur maiores vel vitae dolor
+          fuga dicta! Delectus quam, suscipit quas sunt ratione perferendis
+          iusto impedit architecto veniam optio nihil ullam earum doloremque sed
+          aliquam, placeat eius similique quidem facere amet. Saepe voluptas
+          asperiores numquam aspernatur est veniam, corrupti nostrum illum
+          quaerat? Voluptatem, iure neque mollitia asperiores qui laborum,
+          accusamus explicabo natus quae nam beatae error eum earum vero aliquam
+          obcaecati assumenda. Dolore, totam, ut impedit iure quis voluptates
+          blanditiis dolores earum, quo officiis nostrum? Consequuntur, eveniet!
+        </p>
+      </div>
+      <div class="content-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui optio
+          id adipisci voluptate? Dolore ducimus asperiores ut. Ipsum accusantium
+          eligendi necessitatibus praesentium laudantium quas reprehenderit.
+          Explicabo soluta ducimus provident.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          labore!
+        </p>
+      </div>
+    </footer>
+
+    <img src="/prancing-horse.png" alt="" id="prancing-horse" />
+
+    <script src="/app.js"></script>
+  </body>
+</html>

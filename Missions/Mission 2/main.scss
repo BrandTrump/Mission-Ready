@@ -1,0 +1,297 @@
+body {
+  animation: fade-in 2.5s ease-in-out;
+  font-family: "Tiro Devanagari Sanskrit";
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#prancing-horse {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -4.5em;
+  margin-left: -4em;
+  height: 150px;
+  animation: horse-fade 2.5s ease-in-out forwards;
+  z-index: -10;
+}
+
+#prancing-horse-nav {
+  height: 40px;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: rgb(245, 245, 245);
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+
+  ul {
+    list-style-type: none;
+    padding: 0%;
+    margin-top: 8em;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 0.75em 2em;
+      width: 100%;
+      display: block;
+
+      &:hover {
+        background: rgb(236, 236, 236);
+      }
+    }
+  }
+
+  .close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+  }
+}
+
+header {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+
+  svg {
+    width: 2em;
+    margin-top: -0.4em;
+    cursor: pointer;
+  }
+}
+
+.open-nav {
+  transform: translateX(0%);
+  z-index: 20;
+}
+
+@media only screen and (min-width: 680px) {
+  header {
+    padding: 1.5em 5em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+
+    svg.close {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+
+      a {
+        color: white;
+        padding: 0.5em 1.5em;
+        font-size: 0.9rem;
+
+        &:hover {
+          background: none;
+          color: rgb(175, 175, 175);
+        }
+      }
+    }
+  }
+
+  section.feature-comparison {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 0;
+    animation: load-feature 0.7s ease-in forwards;
+    animation-delay: 2s;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  .columns {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+    background-color: black;
+    color: white;
+    animation: load-comparisonInfo 0.9s ease-in-out forwards;
+    animation-delay: 2s;
+
+    .left {
+      // border: 10px solid lightyellow;
+      padding: 2em;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      letter-spacing: 0.1em;
+      text-decoration: underline;
+    }
+
+    h3 {
+      opacity: 45%;
+      font-size: 0.9em;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+    }
+    .right {
+      text-align: end;
+      // border: 10px solid lightyellow;
+      padding: 2em;
+    }
+
+    #left-comparison {
+      text-align: center;
+      // border: 10px solid salmon;
+    }
+
+    #right-comparison {
+      text-align: center;
+      // border: 10px solid salmon;
+    }
+
+    .compare {
+      // border: 10px solid lightgreen;
+      align-items: center;
+      padding: 2em;
+      button {
+        border: 3px solid red;
+        padding: 1em 2em;
+        font-family: "Tiro Devanagari Sanskrit";
+        font-size: 1em;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        border-radius: 2em;
+        cursor: pointer;
+        z-index: 900;
+        transition-duration: 0.4s;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  .section-content {
+    // border: 10px solid salmon;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    gap: 10em;
+  }
+
+  footer {
+    opacity: 0;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    padding: 3em;
+    animation: load-footer 0.9s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes horse-fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: black;
+  }
+  95% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+// https://bennettfeely.com/clippy/
+@keyframes load-feature {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes load-comparisonInfo {
+  0% {
+    opacity: 0;
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes display-comparison {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes comparison-bg {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgb(218, 0, 0);
+    color: white;
+  }
+}
+
+@keyframes load-footer {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}

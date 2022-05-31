@@ -1,0 +1,400 @@
+body {
+  -webkit-animation: fade-in 2.5s ease-in-out;
+          animation: fade-in 2.5s ease-in-out;
+  font-family: "Tiro Devanagari Sanskrit";
+  margin: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#prancing-horse {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -4.5em;
+  margin-left: -4em;
+  height: 150px;
+  -webkit-animation: horse-fade 2.5s ease-in-out forwards;
+          animation: horse-fade 2.5s ease-in-out forwards;
+  z-index: -10;
+}
+
+#prancing-horse-nav {
+  height: 40px;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: whitesmoke;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0%;
+  margin-top: 8em;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 0.75em 2em;
+  width: 100%;
+  display: block;
+}
+
+nav ul a:hover {
+  background: #ececec;
+}
+
+nav .close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5em 2em;
+}
+
+header svg {
+  width: 2em;
+  margin-top: -0.4em;
+  cursor: pointer;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  z-index: 20;
+}
+
+@media only screen and (min-width: 680px) {
+  header {
+    padding: 1.5em 5em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    color: #afafaf;
+  }
+  section.feature-comparison {
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: black;
+    padding: 0 0;
+    -webkit-animation: load-feature 0.7s ease-in forwards;
+            animation: load-feature 0.7s ease-in forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  section.feature-comparison img {
+    width: 50%;
+    height: auto;
+  }
+  .columns {
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em 5em;
+    background-color: black;
+    color: white;
+    -webkit-animation: load-comparisonInfo 0.9s ease-in-out forwards;
+            animation: load-comparisonInfo 0.9s ease-in-out forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .columns .left {
+    padding: 2em;
+  }
+  .columns h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+  }
+  .columns h3 {
+    opacity: 45%;
+    font-size: 0.9em;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+  .columns .right {
+    text-align: end;
+    padding: 2em;
+  }
+  .columns #left-comparison {
+    text-align: center;
+  }
+  .columns #right-comparison {
+    text-align: center;
+  }
+  .columns .compare {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
+  }
+  .columns .compare button {
+    border: 3px solid red;
+    padding: 1em 2em;
+    font-family: "Tiro Devanagari Sanskrit";
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    cursor: pointer;
+    z-index: 900;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+  }
+  .columns .compare button:hover {
+    background-color: red;
+  }
+  .section-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5em;
+    gap: 10em;
+  }
+  footer {
+    opacity: 0;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    padding: 3em;
+    -webkit-animation: load-footer 0.9s ease-in-out forwards;
+            animation: load-footer 0.9s ease-in-out forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+
+@-webkit-keyframes horse-fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+
+@keyframes horse-fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    background-color: black;
+  }
+  95% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: black;
+  }
+  95% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@-webkit-keyframes load-feature {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes load-feature {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes load-comparisonInfo {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+            clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes load-comparisonInfo {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+            clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes display-comparison {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes display-comparison {
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes comparison-bg {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #da0000;
+    color: white;
+  }
+}
+
+@keyframes comparison-bg {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #da0000;
+    color: white;
+  }
+}
+
+@-webkit-keyframes load-footer {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes load-footer {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
