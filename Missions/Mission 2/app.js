@@ -31,8 +31,13 @@ const infoF50 = {
 };
 
 function compareCars(car1, car2) {
+  // Inside the function, keys1 is an array
+  // containing the corresponding property names of car1.
   const keys1 = Object.keys(car1);
+  // expected output: Array ["acceleration", "quaterMile", "mile"]
 
+  // for cycle iterates over the keys, and compares each property of car1 and
+  // car2 which is greater car1[key] < car2[key].
   for (const key of keys1) {
     if (car1[key] < car2[key]) {
       leftCompare.innerHTML += `The F40 has a faster ${key} time of: ${car1[key]} <br><br>`;

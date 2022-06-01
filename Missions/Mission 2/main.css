@@ -95,6 +95,134 @@ header svg {
   z-index: 20;
 }
 
+section.feature-comparison {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  padding: 0 0;
+  -webkit-animation: load-feature 0.7s ease-in forwards;
+          animation: load-feature 0.7s ease-in forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+section.feature-comparison img {
+  width: 100%;
+  height: auto;
+}
+
+.columns {
+  opacity: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 5em;
+  background-color: black;
+  color: white;
+  -webkit-animation: load-comparisonInfo 0.9s ease-in-out forwards;
+          animation: load-comparisonInfo 0.9s ease-in-out forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.columns .left {
+  padding: 2em;
+  text-align: center;
+}
+
+.columns h1 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+
+.columns h3 {
+  opacity: 45%;
+  font-size: 0.9em;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.columns .right {
+  text-align: center;
+  padding: 2em;
+}
+
+.columns #left-comparison {
+  text-align: center;
+}
+
+.columns #right-comparison {
+  text-align: center;
+}
+
+.columns .compare {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.columns .compare button {
+  border: 3px solid red;
+  padding: 1em 2em;
+  font-family: "Tiro Devanagari Sanskrit";
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  z-index: 900;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.columns .compare button:hover {
+  background-color: red;
+}
+
+.section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5em;
+  gap: 10em;
+}
+
+footer {
+  opacity: 0;
+  background-color: black;
+  color: white;
+  margin-top: auto;
+  padding: 3em;
+  -webkit-animation: load-footer 0.9s ease-in-out forwards;
+          animation: load-footer 0.9s ease-in-out forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  text-align: center;
+}
+
 @media only screen and (min-width: 680px) {
   header {
     padding: 1.5em 5em;
@@ -172,6 +300,7 @@ header svg {
   }
   .columns .left {
     padding: 2em;
+    text-align: start;
   }
   .columns h1 {
     font-size: 1.5em;
@@ -237,6 +366,7 @@ header svg {
             animation: load-footer 0.9s ease-in-out forwards;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
+    text-align: center;
   }
 }
 
