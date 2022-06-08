@@ -1,4 +1,4 @@
-function Fruits() {
+export default function Fruits() {
   const fruits = [
     {
       name: "Apple",
@@ -20,7 +20,7 @@ function Fruits() {
   return (
     <div>
       {fruits.map((fruit, index) => (
-        <div>
+        <div key={index}>
           {index + 1}. {fruit.units} units of {fruit.name} costs $
           {(fruit.price * fruit.units).toFixed(2)}
         </div>
@@ -28,4 +28,5 @@ function Fruits() {
     </div>
   );
 }
-export default Fruits;
+// Can use export default at the top with function definition
+// export default Fruits

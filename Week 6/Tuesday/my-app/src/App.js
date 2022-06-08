@@ -2,6 +2,7 @@ import Car from "./Car";
 import Fruits from "./Fruits";
 import User from "./User";
 import Person from "./Person";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <User></User>
       <br />
       <Person name="Mike" age="26"></Person>
+      <Counter></Counter>
     </div>
   );
 }
