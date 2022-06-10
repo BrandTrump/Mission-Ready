@@ -7,7 +7,7 @@ import ColorDiv from "./ColorDiv";
 import FormExample from "./FormExample";
 import TernaryShowHide from "./TernaryShowHide";
 import LogicalAnd from "./LogicalAnd";
-import MainBranch from "./MainBranch";
+import TestBranch from "./TestBranch";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
       <br />
       <LogicalAnd></LogicalAnd>
       <br />
-      <MainBranch></MainBranch>
+      <TestBranch></TestBranch>
     </div>
   );
 }
