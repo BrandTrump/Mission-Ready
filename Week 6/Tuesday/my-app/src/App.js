@@ -7,6 +7,7 @@ import ColorDiv from "./ColorDiv";
 import FormExample from "./FormExample";
 import TernaryShowHide from "./TernaryShowHide";
 import LogicalAnd from "./LogicalAnd";
+import MainBranch from "./MainBranch";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <br />
       <br />
       <LogicalAnd></LogicalAnd>
+      <br />
+      <MainBranch></MainBranch>
     </div>
   );
 }
