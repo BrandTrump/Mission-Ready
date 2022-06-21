@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.home {
+  background-color: blueviolet;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+}
+
+.about {
+  background-color: green;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+}
+
+.contact {
+  background-color: orange;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+}
+
+.login {
+  background-color: red;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+}
+
+.sign-up {
+  background-color: pink;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 3em;
+  padding: 1em;
+}
